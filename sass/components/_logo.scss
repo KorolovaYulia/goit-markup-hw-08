@@ -1,0 +1,19 @@
+.logo {
+  font-family: Raleway;
+  @include font(700, 26px, 1.19, 0.03em);
+  color: $accent-color;
+}
+
+.logo-black {
+  color: $primary-text-color;
+}
+
+.logo-link {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo-white {
+  color: $primary-white-color;
+  padding-top: 60px;
+}
