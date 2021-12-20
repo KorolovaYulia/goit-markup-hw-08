@@ -1,5 +1,9 @@
 .works-section {
   padding-top: 0;
+
+  @media screen and (max-width: 1199px){
+    visibility: hidden;
+  }
 }
 
 .list-works__item {
