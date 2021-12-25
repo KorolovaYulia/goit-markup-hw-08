@@ -1,14 +1,19 @@
 .works-section {
   padding-top: 0;
 
-  @media screen and (max-width: 1199px){
-    visibility: hidden;
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
+}
+
+.list-works {
+  display: flex;
 }
 
 .list-works__item {
   position: relative;
   margin-right: 30px;
+  
 
   &:nth-child(3n) {
     margin-right: 0;
