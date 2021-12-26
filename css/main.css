@@ -1360,14 +1360,28 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
+  padding: 93px 15px;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .backdrop {
+    padding: 208px 159px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    padding: 221px 536px;
+  }
+}
+
 .backdrop.is-hidden {
-  /*  visibility: hidden; */
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -1378,13 +1392,6 @@ button {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1, 1);
-          transform: translate(-50%, -50%) scale(1, 1);
-  max-width: 450px;
-  min-height: 609px;
   padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1396,10 +1403,35 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+    min-height: 609px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1, 1);
+            transform: translate(-50%, -50%) scale(1, 1);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
+    max-width: 528px;
     min-height: 581px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1, 1);
+            transform: translate(-50%, -50%) scale(1, 1);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -1451,7 +1483,8 @@ label {
 textarea {
   resize: none;
   padding: 12px 16px;
-  width: 448px;
+  max-width: 370px;
+  width: 100%;
   height: 120px;
   outline: none;
   caret-color: #2196f3;
@@ -1459,6 +1492,13 @@ textarea {
   border-radius: 4px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  textarea {
+    width: 448px;
+    width: 100%;
+  }
 }
 
 textarea:focus {
@@ -1510,7 +1550,8 @@ textarea::placeholder {
 }
 
 .order-form__input {
-  width: 448px;
+  max-width: 370px;
+  width: 100%;
   height: 40px;
   padding: 0 0 0 42px;
   caret-color: #2196f3;
@@ -1519,6 +1560,13 @@ textarea::placeholder {
   outline: none;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .order-form__input {
+    width: 448px;
+    width: 100%;
+  }
 }
 
 .form-field .order-form__input:focus {
@@ -1601,10 +1649,28 @@ textarea::placeholder {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 10px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .check-box {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .check-box {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .check-box__box {
