@@ -28,8 +28,13 @@
 
   transform: translate(-50%, -50%) scale(1, 1);
 
-  min-width: 528px;
-  min-height: 581px;
+  max-width: 450px;
+  min-height: 609px;
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
   padding: 40px;
 
   background-color: $primary-white-color;
