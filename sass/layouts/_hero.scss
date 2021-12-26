@@ -70,10 +70,10 @@
 }
 
 .hero__title {
-  width: 100%;
+ 
   margin: 0 auto 30px;
 
-  @media screen /* and (min-width: 480px)  */and (max-width: 1199px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     @include font($fw: 900, $fs: 26px, $lh: 1.61, $ls: 0.06em);
     width: 360px;
   }
