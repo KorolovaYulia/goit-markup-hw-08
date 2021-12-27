@@ -23,7 +23,7 @@
 }
 
 .backdrop.is-hidden {
-   visibility: hidden;
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
   .modal {
@@ -32,6 +32,10 @@
 }
 
 .modal {
+  position: relative;
+  max-width: 450px;
+  width: 100%;
+
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     max-width: 450px;
     min-height: 609px;
@@ -68,6 +72,12 @@
   position: absolute;
   top: 8px;
   right: 8px;
+
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
 
   cursor: pointer;
   width: 30px;
