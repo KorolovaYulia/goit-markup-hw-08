@@ -16,7 +16,7 @@
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.networks__link-white {
+.networks__link--white {
   background-color: $primary-white-color;
   fill: $clients-section-color;
   &:hover,
@@ -26,7 +26,7 @@
   }
 }
 
-.networks__link-grey {
+.networks__link--grey {
   background-color: rgba(255, 255, 255, 0.1);
   fill: $primary-white-color;
   &:hover,

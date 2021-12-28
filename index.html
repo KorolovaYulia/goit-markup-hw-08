@@ -16,26 +16,28 @@
 
   <body>
     <header class="header">
-      <div class="container main-nav">
-        <a href="" class="logo">Web<span class="logo-black">Studio</span></a>
-        <nav class="menu menu-margin">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="" class="menu__link menu__link-active">Студия</a>
+      <div class="container header__container">
+        <a href="" class="logo">Web<span class="logo--black">Studio</span></a>
+        <nav class="menu-header menu-header--margin">
+          <ul class="menu-header__list">
+            <li class="menu-header__item">
+              <a href="" class="menu-header__link menu-header__link--active"
+                >Студия</a
+              >
             </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link">Портфолио</a>
+            <li class="menu-header__item">
+              <a href="./portfolio.html" class="menu-header__link">Портфолио</a>
             </li>
-            <li class="menu__item">
-              <a href="" class="menu__link">Контакты</a>
+            <li class="menu-header__item">
+              <a href="" class="menu-header__link">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="header-contacts header-contacts_block">
+        <ul class="header-contacts header-contacts__header">
           <li class="header-contacts__item">
             <a href="mailto:info@devstudio.com" class="header-contacts__link">
-              <svg class="header-contacts_icon" width="16" height="12">
+              <svg class="header-contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -43,7 +45,7 @@
           </li>
           <li class="header-contacts__item">
             <a href="tel:+380961111111" class="header-contacts__link">
-              <svg class="header-contacts_icon" width="10" height="16">
+              <svg class="header-contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -51,79 +53,70 @@
           </li>
         </ul>
         <button
-      class="open-menu-btn js-open-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
-      <svg
-        width="24"
-        height="24"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-          clip-rule="evenodd"
-        ></path>
-      </svg>
-    </button>
+          class="open-menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="16">
+            <use href="./images/menu_24px.svg#icon-open"></use>
+          </svg>
+        </button>
       </div>
-      
+
       <div class="menu-container js-menu-container" id="mobile-menu">
         <div class="container">
           <div class="mob-menu-top">
-        <button class="close-menu-btn js-close-menu">
-          <svg
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-  
-        <ul class="mob-menu__list">
-          <li class="mob-menu__item">
-            <a href="" class="mob-menu__link--active">Студия</a>
-          </li>
-          <li class="mob-menu__item">
-            <a href="./portfolio.html" class="mob-menu__link">Портфолио</a>
-          </li>
-          <li class="mob-menu__item">
-            <a href="" class="mob-menu__link">Контакты</a>
-          </li>
-        </ul>
-      </div>
-<div class="mob-menu-bottom">
-        <ul class="mob-menu-contacts mob-menu-contacts_block">
-          <li class="mob-menu-contacts__item">
-            <a href="tel:+380961111111" class="mob-menu-contacts__tel">+38 096 111 11 11</a
-              >
-          </li>
-          <li class="mob-menu-contacts__item">
-            <a href="mailto:info@devstudio.com" class="mob-menu-contacts__site">info@devstudio.com</a
-              >
-          </li>
-        </ul>
-        
-        <ul class="mob-social-list">
-          <li class=""><a href="" class="mob-social-link">Instagram</a></li>
-          <li  class=""><a href="" class="mob-social-link">Twitter</a></li>
-          <li  class=""><a href="" class="mob-social-link">Facebook</a></li>
-          <li  class=""><a href="" class="mob-social-link">LinkedIn</a></li>
-        </ul>
-      </div>
-      </div>
+            <button class="close-menu-btn js-close-menu">
+              <svg width="20" height="20">
+                <use href="./images/mob-menu.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-top__list">
+              <li class="mob-menu-top__item">
+                <a href="./index.html" class="mob-menu-top__link--active">Студия</a>
+              </li>
+              <li class="mob-menu-top__item">
+                <a href="./portfolio.html" class="mob-menu-top__link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu-top__item">
+                <a href="" class="mob-menu-top__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="mob-menu-contacts mob-menu-contacts__block">
+              <li class="mob-menu-contacts__item">
+                <a href="tel:+380961111111" class="mob-menu-contacts__tel"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-menu-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-menu-contacts__site"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
 
-
+            <ul class="mob-menu-social mob-menu-social__list">
+              <li class="mob-menu-social__item">
+                <a href="" class="mob-menu-social__link">Instagram</a>
+              </li>
+              <li class="mob-menu-social__item">
+                <a href="" class="mob-menu-social__link">Twitter</a>
+              </li>
+              <li class="mob-menu-social__item">
+                <a href="" class="mob-menu-social__link">Facebook</a>
+              </li>
+              <li class="mob-menu-social__item">
+                <a href="" class="mob-menu-social__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -142,7 +135,7 @@
           <h2 class="title title-hidden">Наши преимущества</h2>
           <ul class="benefits-list">
             <li class="benefits-list__item">
-              <div class="benefits-list__icon">
+              <div class="benefits-list__box">
                 <svg class="" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -154,7 +147,7 @@
               </p>
             </li>
             <li class="benefits-list__item">
-              <div class="benefits-list__icon">
+              <div class="benefits-list__box">
                 <svg class="" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -166,7 +159,7 @@
               </p>
             </li>
             <li class="benefits-list__item">
-              <div class="benefits-list__icon">
+              <div class="benefits-list__box">
                 <svg class="" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -178,7 +171,7 @@
               </p>
             </li>
             <li class="benefits-list__item">
-              <div class="benefits-list__icon">
+              <div class="benefits-list__box">
                 <svg class="" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -193,9 +186,9 @@
         </div>
       </section>
 
-      <section class="section works-section">
+      <section class="section section--no-padding-top">
         <div class="container">
-          <h2 class="title title-margin">Чем мы занимаемся</h2>
+          <h2 class="title section__margin">Чем мы занимаемся</h2>
           <ul class="list-works">
             <li class="list-works__item">
               <picture>
@@ -255,9 +248,9 @@
         </div>
       </section>
 
-      <section class="section section-team">
+      <section class="section section--colorbg">
         <div class="container">
-          <h2 class="title title-margin">Наша команда</h2>
+          <h2 class="title section__margin">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-list__item">
               <picture>
@@ -294,28 +287,28 @@
 
                 <ul class="networks team-networks-position">
                   <li class="networks__item">
-                    <a href="" class="networks__link networks__link-white">
+                    <a href="" class="networks__link networks__link--white">
                       <svg class="" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="networks__item">
-                    <a href="" class="networks__link networks__link-white">
+                    <a href="" class="networks__link networks__link--white">
                       <svg class="" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="networks__item">
-                    <a href="" class="networks__link networks__link-white">
+                    <a href="" class="networks__link networks__link--white">
                       <svg class="" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="networks__item">
-                    <a href="" class="networks__link networks__link-white">
+                    <a href="" class="networks__link networks__link--white">
                       <svg class="" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -358,28 +351,28 @@
 
                 <ul class="networks team-networks-position">
                   <li class="networks__item">
-                    <a href="" class="networks__link networks__link-white">
+                    <a href="" class="networks__link networks__link--white">
                       <svg class="" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="networks__item">
-                    <a href="" class="networks__link networks__link-white">
+                    <a href="" class="networks__link networks__link--white">
                       <svg class="" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="networks__item">
-                    <a href="" class="networks__link networks__link-white">
+                    <a href="" class="networks__link networks__link--white">
                       <svg class="" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="networks__item">
-                    <a href="" class="networks__link networks__link-white">
+                    <a href="" class="networks__link networks__link--white">
                       <svg class="" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -422,28 +415,28 @@
 
                 <ul class="networks team-networks-position">
                   <li class="networks__item">
-                    <a href="" class="networks__link networks__link-white">
+                    <a href="" class="networks__link networks__link--white">
                       <svg class="" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="networks__item">
-                    <a href="" class="networks__link networks__link-white">
+                    <a href="" class="networks__link networks__link--white">
                       <svg class="" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="networks__item">
-                    <a href="" class="networks__link networks__link-white">
+                    <a href="" class="networks__link networks__link--white">
                       <svg class="" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="networks__item">
-                    <a href="" class="networks__link networks__link-white">
+                    <a href="" class="networks__link networks__link--white">
                       <svg class="" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -486,28 +479,28 @@
 
                 <ul class="networks team-networks-position">
                   <li class="networks__item">
-                    <a href="" class="networks__link networks__link-white">
+                    <a href="" class="networks__link networks__link--white">
                       <svg class="" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="networks__item">
-                    <a href="" class="networks__link networks__link-white">
+                    <a href="" class="networks__link networks__link--white">
                       <svg class="" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="networks__item">
-                    <a href="" class="networks__link networks__link-white">
+                    <a href="" class="networks__link networks__link--white">
                       <svg class="" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="networks__item">
-                    <a href="" class="networks__link networks__link-white">
+                    <a href="" class="networks__link networks__link--white">
                       <svg class="" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -522,7 +515,7 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="title title-margin">Постоянные клиенты</h2>
+          <h2 class="title section__margin">Постоянные клиенты</h2>
           <ul class="clients-list">
             <li class="clients-list__item">
               <a href="" class="clients-list__link">
@@ -574,8 +567,8 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-addres">
-          <a href="" class="logo logo-link"
-            >Web<span class="logo-white">Studio</span>
+          <a href="" class="logo logo__link"
+            >Web<span class="logo--white">Studio</span>
           </a>
           <address>
             <ul class="footer-contacts">
@@ -604,28 +597,28 @@
           <h3 class="footer-title">присоединяйтесь</h3>
           <ul class="networks">
             <li class="networks__item">
-              <a href="" class="networks__link networks__link-grey">
+              <a href="" class="networks__link networks__link--grey">
                 <svg class="" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="networks__item">
-              <a href="" class="networks__link networks__link-grey">
+              <a href="" class="networks__link networks__link--grey">
                 <svg class="" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="networks__item">
-              <a href="" class="networks__link networks__link-grey">
+              <a href="" class="networks__link networks__link--grey">
                 <svg class="" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="networks__item">
-              <a href="" class="networks__link networks__link-grey">
+              <a href="" class="networks__link networks__link--grey">
                 <svg class="" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -743,6 +736,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

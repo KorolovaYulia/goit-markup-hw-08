@@ -35,7 +35,9 @@
   position: relative;
   max-width: 450px;
   width: 100%;
-  padding: 40px;
+
+  padding: 40px 10px 40px 10px;
+  
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     max-width: 450px;
     min-height: 609px;
