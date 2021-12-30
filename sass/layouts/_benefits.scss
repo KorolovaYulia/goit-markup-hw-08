@@ -12,6 +12,16 @@
   }
 }
 
+.benefits-list__title {
+ @include font($fw: 700, $fs: 14px, $lh: 1.14, $ls: 0.03em);
+  text-transform: uppercase;
+
+  @media screen and (max-width: 767.5px)  {
+    text-align: center;
+  }
+
+}
+
 .benefits-list__item {
   margin-bottom: 30px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -38,6 +48,6 @@
 
 .benefits-list__text {
   margin-top: 10px;
-  @include font($fs: 14px, $lh: 1.71, $ls: 0.03em);
+  @include font($fw: 400, $fs: 14px, $lh: 1.71, $ls: 0.03em);
   color: $second-text-color;
 }
